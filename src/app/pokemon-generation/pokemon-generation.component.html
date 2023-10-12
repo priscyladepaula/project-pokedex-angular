@@ -1,0 +1,12 @@
+<div class="gen-boxes">
+    <div *ngFor="let generation of listGenerations">
+        <div>
+            <button class="app-pokemon-list" type="button" #btn1 (click)="getElementId(btn1)"
+                [id]="generation.name"
+                routerLink="/pokemon/"
+                >
+                {{ generation.name }}
+            </button>
+        </div>
+    </div>
+</div>

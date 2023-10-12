@@ -1,0 +1,17 @@
+header {
+    float: left;
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #6b23b3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+}
