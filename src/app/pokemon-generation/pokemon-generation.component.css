@@ -1,0 +1,42 @@
+.gen-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    place-items: center;
+
+}
+
+.selectgen-txt{
+    text-transform: uppercase;
+    color: white;
+}
+
+.selectgen-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 10px;
+    margin-top: 79px;
+}
+
+.gen-btns {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-family: 'Montserrat';
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; */
+}
+
+.gen-btns:hover {
+    background-color: rgba(99, 13, 180, 0.5);
+}
