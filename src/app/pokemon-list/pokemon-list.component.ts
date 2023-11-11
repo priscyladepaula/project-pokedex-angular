@@ -1,7 +1,8 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { DataService } from '../service/data.service';
 import { PokemonGenerationComponent } from '../pokemon-generation/pokemon-generation.component';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -11,12 +12,16 @@ import { ActivatedRoute } from '@angular/router';
 export class PokemonListComponent implements OnInit {
 
   listPokemons: any = [];
-  recebeGeracao: number = 0;
+  recebeGeracao: any;
 
-  constructor(public dataService: DataService, private route: ActivatedRoute) { }
+  private subscription!: Subscription;
+
+  constructor(public dataService: DataService, private route: Router) { }
 
   ngOnInit(): void {
-    this.getPokemonGeneration(2);
+    this.subscription = this.dataService._data.subscribe((data) => {
+      this.getPokemonGeneration(data);
+    })
   }
 
   leadingZero(str: string | number, size = 4): string {
@@ -82,5 +87,13 @@ export class PokemonListComponent implements OnInit {
         })
       })
     })
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+
+  voltar() {
+    this.route.navigate(['/generation']);
   }
 }

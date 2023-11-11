@@ -8,6 +8,7 @@ header {
     top: 0;
     left: 0;
     text-align: center;
+    z-index: 2;
 }
 
 header h1 {

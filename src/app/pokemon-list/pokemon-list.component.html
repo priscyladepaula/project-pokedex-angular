@@ -1,15 +1,15 @@
-<!-- <div class="back-button">
-    <a routerLink="/generation"
-        routerLinkActive="active">Voltar</a>
-</div> -->
-<body>
+<div class="list-body">
+    <div>
+        <button class="back-button" (click)="voltar()">Selecionar Geração</button>
+    </div>
     <div class="pokemon-grid">
         <div class="front-box" *ngFor="let pokemon of listPokemons">
-            <img
+            <img class="img-box"
                 [src]="pokemon.sprites['other']['official-artwork']['front_default']" />
             <div class="nameBox">
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" alt="Pokeball" />
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png"
+                    alt="Pokeball" />
                 {{
                 pokemon.species.name }}
             </div>
@@ -22,4 +22,4 @@
             </div>
         </div>
     </div>
-</body>
+</div>

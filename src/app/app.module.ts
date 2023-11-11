@@ -11,11 +11,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
-  // { path: '', component: PokemonGenerationComponent },
+  { path: '', component: PokemonGenerationComponent },
   { path: 'generation', component: PokemonGenerationComponent },
   { path: 'pokemon', component: PokemonListComponent },
-  { path: 'pokemon/:id', component: PokemonListComponent },
-  { path: '', redirectTo: 'generation', pathMatch: 'full' },
 ]
 
 
@@ -24,7 +22,7 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     PokemonListComponent,
-    PokemonGenerationComponent,
+    PokemonGenerationComponent
   ],
   imports: [
     BrowserModule,

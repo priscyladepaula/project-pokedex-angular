@@ -1,14 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 /* Base */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #003068;
+    background-color: #053364;
     background-image: url('https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png');
     background-blend-mode: luminosity;
 }
-html, body { height: 100%; }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}

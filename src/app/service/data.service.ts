@@ -14,7 +14,14 @@ export class DataService {
   url = 'https://pokeapi.co/api/v2';
   pokemons: any[] = [];
 
+  private dataSubject = new BehaviorSubject<any>(null);
+  _data = this.dataSubject.asObservable();
+
   constructor(private http: HttpClient) { }
+
+  sendData(data: any){
+    this.dataSubject.next(data);
+  }
 
   getGenPokemons(num: number): Observable<Generation[]>{
     return this.http.get<Generation[]>(`${this.url}/generation/${num}`)

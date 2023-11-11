@@ -1,12 +1,16 @@
-<div class="gen-boxes">
-    <div *ngFor="let generation of listGenerations">
-        <div>
-            <button class="app-pokemon-list" type="button" #btn1 (click)="getElementId(btn1)"
-                [id]="generation.name"
-                routerLink="/pokemon/"
-                >
-                {{ generation.name }}
-            </button>
+<div class="gen-body">
+    <div class="selectgen-box">
+        <h3 class="selectgen-txt">Selecione a Geração</h3>
+    </div>
+    <div class="gen-boxes">
+        <div *ngFor="let generation of listGenerations">
+            <div>
+                <div class="gen-btns" type="button" #btn1
+                    (click)="getElementId(btn1)"
+                    [id]="generation.name">
+                    {{ romanToNumber(generation.name) }}
+                </div>
+            </div>
         </div>
     </div>
 </div>

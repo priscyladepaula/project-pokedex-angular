@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { DataService } from '../service/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon-generation',
@@ -10,7 +11,8 @@ export class PokemonGenerationComponent implements OnInit {
 
   listGenerations: any = [];
 
-  constructor(public dataService: DataService) { }
+  constructor(public dataService: DataService,
+    private router: Router) { }
 
   convertido: number = 0;
 
@@ -31,7 +33,9 @@ export class PokemonGenerationComponent implements OnInit {
     word[1] = word[1].toUpperCase();
     const romano = word[1];
     this.convertido = this.convertRomanToInt(romano);
-    console.log(this.convertido);
+    
+    this.dataService.sendData(this.convertido);
+    this.router.navigate(['/pokemon']);
   }
 
   convertRomanToInt(s: string): number {
@@ -72,6 +76,12 @@ export class PokemonGenerationComponent implements OnInit {
     this.romanToInt(elementId);
   }
 
-
+  romanToNumber(name: string){
+    let word = name.split('-');
+    word[1] = word[1].toUpperCase();
+    const romano = word[1];
+    this.convertido = this.convertRomanToInt(romano);
+    return this.convertido;
+  }
 
 }
