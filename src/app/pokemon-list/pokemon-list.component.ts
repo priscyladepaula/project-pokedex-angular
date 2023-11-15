@@ -96,4 +96,8 @@ export class PokemonListComponent implements OnInit {
   voltar() {
     this.route.navigate(['/generation']);
   }
+
+  upperFirstLetter(name: string){
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }
 }
