@@ -20,7 +20,7 @@ export class PokemonListComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscription = this.dataService._data.subscribe((data) => {
-      this.getPokemonGeneration(1);
+      this.getPokemonGeneration(data);
     })
   }
 
