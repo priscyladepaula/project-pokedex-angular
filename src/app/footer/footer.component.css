@@ -1,0 +1,18 @@
+footer {
+    background-color: #6b23b3;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.container {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        position: relative;
+    }
+}

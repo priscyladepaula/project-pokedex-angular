@@ -20,7 +20,7 @@ export class PokemonListComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscription = this.dataService._data.subscribe((data) => {
-      this.getPokemonGeneration(data);
+      this.getPokemonGeneration(1);
     })
   }
 
@@ -95,5 +95,9 @@ export class PokemonListComponent implements OnInit {
 
   voltar() {
     this.route.navigate(['/generation']);
+  }
+
+  upperFirstLetter(name: string){
+    return name.charAt(0).toUpperCase() + name.slice(1);
   }
 }

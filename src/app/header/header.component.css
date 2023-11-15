@@ -7,7 +7,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    text-align: center;
     z-index: 2;
 }
 
@@ -15,4 +14,10 @@ header h1 {
     text-transform: uppercase;
     color: white;
     letter-spacing: 3px;
+    margin-left: 20px;
 }
+
+.container { 
+    display: flex;
+}
+ 

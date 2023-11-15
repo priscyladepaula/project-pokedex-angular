@@ -15,14 +15,15 @@
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    margin-top: 100px;
+    margin-top: 105px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.20);
-    font-family: 'Montserrat';
     border-radius:4px;
     cursor:pointer;
     text-decoration:none;
     border: none;
+    margin-left: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .back-button:hover {
@@ -52,7 +53,6 @@
     background-color: #162b4a;
     color: white;
     padding: 5px;
-    text-transform: uppercase;
     font-weight: bold;
 
 }
@@ -61,6 +61,7 @@
     width: 25px;
     float: left;
     padding-right: 5px;
+    margin-top: 3px;
 }
 
 .nameType {

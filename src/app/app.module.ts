@@ -9,6 +9,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonGenerationComponent } from './pokemon-generation/pokemon-generation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: PokemonGenerationComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     PokemonListComponent,
-    PokemonGenerationComponent
+    PokemonGenerationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
