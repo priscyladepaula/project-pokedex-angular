@@ -5,6 +5,7 @@ footer {
     bottom: 0;
     width: 100%;
     position: fixed;
+    border-bottom: 5px solid #e4c30f;
 }
 
 .container {
