@@ -8,6 +8,7 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+    border-top: 5px solid #e4c30f;
 }
 
 header h1 {

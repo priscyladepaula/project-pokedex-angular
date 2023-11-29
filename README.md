@@ -12,3 +12,10 @@ Printscreen do jogo Pokemon Violet, da Nintendo.
 
 Execute o comando `ng serve -o` para execução local. Navegue pelo `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
 
+### Resultado
+![Gerações](image-1.png)
+![Pokemons](image-2.png)
+
+## Responsivo
+![Gerações](image-3.png)
+![Pokemons](image-4.png)

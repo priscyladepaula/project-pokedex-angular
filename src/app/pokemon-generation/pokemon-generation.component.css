@@ -20,13 +20,13 @@
     display: flex;
     background-color: #053364;
     padding: 10px;
-    margin-top: 79px;
+    margin-top: 85px;
     position: fixed;
     width: 100%;
 }
 
 .yellow-rect {
-    border-left: 6px solid yellow;
+    border-left: 6px solid #e4c30f;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -36,7 +36,7 @@
     font-weight: bold;
     font-size: 25px;
     color: white;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 100px;
     background-color: rgba(0, 0, 0, 0.20);
     border-radius: 4px;
